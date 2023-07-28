@@ -2,18 +2,25 @@
   "name": "@roeefl/vite-plugin-react-css-modules",
   "version": "0.1.0",
   "description": "automatically transform component-scoped *.css|scss files to *.module.css|scss",
-  "main": "index.js",
+  "main": "dist/bundle.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx rollup -c"
   },
-  "keywords": [],
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Roeefl/vite-plugin-react-css-modules.git"
+  },
+  "author": "roeefl",
   "license": "ISC",
-  "devDependencies": {
-    "@types/babel__core": "^7.20.1",
-    "tsc": "^2.0.4",
-    "typescript": "^5.1.6"
-  },
+  "keywords": [
+    "vite",
+    "rollup",
+    "css-modules",
+    "vite-plugin",
+    "rollup-plugin",
+    "vite-plugin-react"
+  ],
   "dependencies": {
     "@babel/core": "^7.22.9"
   }
