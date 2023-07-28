@@ -36,7 +36,7 @@ function autoCSSModulePlugin() {
 }
 
 function transform(code, { sourceMap, file }) {
-  const parsePlugins: any[] = ['jsx'];
+  const parsePlugins = ['jsx'];
 
   if (/\.tsx?$/.test(file)) {
     parsePlugins.push('typescript');
