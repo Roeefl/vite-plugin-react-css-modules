@@ -1,7 +1,7 @@
 {
   "name": "@roeefl/vite-plugin-react-css-modules",
   "version": "0.1.0",
-  "description": "automatically transform *.css|scss files to *.module.css|scss",
+  "description": "automatically transform component-scoped *.css|scss files to *.module.css|scss",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,7 +10,11 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/babel__core": "^7.20.1",
     "tsc": "^2.0.4",
     "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "@babel/core": "^7.22.9"
   }
 }
